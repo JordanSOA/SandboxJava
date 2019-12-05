@@ -35,8 +35,9 @@ public class Application {
                 joeDalton.shoot(luckyLuke);
             }
             //Each Round Output
-            System.out.println(luckyLuke);
-            System.out.println(joeDalton);
+            System.out.println(nb);
+            //System.out.println(luckyLuke);
+            //System.out.println(joeDalton);
         }
     }
 
