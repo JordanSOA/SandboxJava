@@ -71,7 +71,7 @@ public class Cowboy {
      */
     public boolean isDead() {
         // To be implemented
-        Boolean isDead =  (energy > 0) ? false :  true;
+        Boolean isDead =  (energy <= 0) ? true :  false;
         return isDead;
         }
 

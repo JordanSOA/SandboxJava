@@ -23,16 +23,17 @@ public class Application {
      * aller au plus simple.
      */
     private static void shootUntilDeath(Cowboy luckyLuke, Cowboy joeDalton) {
+        Random random = new Random();
+        int nb;
         while (!joeDalton.isDead() && !luckyLuke.isDead()){
-            Random random = new Random();
-            int nb;
             nb = random.nextInt(2);
 
-            if (nb == 0) if (!joeDalton.isDead()) luckyLuke.shoot(joeDalton);
-            else break;
-            else if (!luckyLuke.isDead()) joeDalton.shoot(luckyLuke);
-             else break;
-
+            if (nb == 0) {
+                luckyLuke.shoot(joeDalton);
+                }
+             else {
+                joeDalton.shoot(luckyLuke);
+            }
             //Each Round Output
             System.out.println(luckyLuke);
             System.out.println(joeDalton);
