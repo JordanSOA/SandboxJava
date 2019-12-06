@@ -48,8 +48,7 @@ public class Application {
                                               boolean rounded) {
         // Implémenter pour que result = price HT basé sur rate
         double result = 0.0;
-
-        result = price - ((price / 100)* rate);
+        result = price /(1 + (rate/100));
         /*
          * Retourne le résultat arrondi ou non en fonction de rounded = false ou
          * rounded = true. Rien à changer ci-dessous.
